@@ -8,10 +8,16 @@ export default function References({ navigation }) {
         navigation.navigate('Main');
     };
 
+    const loadReference_Goods_List = () => {
+        navigation.navigate('Reference_Goods_List');
+    };
+
+
+
     return (
         <View style={gStyle.main}>
 
-            <TouchableOpacity style={styles.button} onPress={loadGoods}>
+            <TouchableOpacity style={styles.button} onPress={loadReference_Goods_List}>
                 <Text style={styles.text}>Товари</Text>
             </TouchableOpacity>
 
